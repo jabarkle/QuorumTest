@@ -1,0 +1,73 @@
+1. System Overview & Tech Stack
+Quorum is a high-performance federal procurement intelligence platform built on a serverless architecture.
+
+Infrastructure: AWS (via SST - Serverless Stack)
+Frontend: Next.js 14+ (React Server Components), hosted on AWS Lambda + CloudFront (OpenNext).
+Backend: AWS Lambda (Node.js/TypeScript).
+Database: Amazon Aurora Serverless v2 (PostgreSQL).
+Storage: Amazon S3 (Raw solicitation documents and attachments).
+Deployment: Monorepo structure managed by sst and npm.
+2. Architecture & Data Flow
+The system is designed for automated ingestion, processing, and retrieval of federal solicitation data.
+
+Data Ingestion Pipeline
+Scraper/Ingestion:
+
+Source: SAM.gov API and direct scraping.
+Trigger: Scheduled events or manual invocation via the ManualScraper Lambda.
+Action: Raw JSON metadata and attachments are saved to the RawData S3 Bucket.
+Processing (The "Meat" Extraction):
+
+Trigger: Object creation events in S3.
+Extractor: Accesses valid attachments (PDF/Docx).
+Guillotine Logic: specialized regex/parsing logic ("The Guillotine") amputates legal boilerplate (Clause 2, etc.) to retain only the "meat" (SOW/PWS/Specs).
+Vectorization: Processed text is chunked and embedded for semantic search.
+Storage:
+
+Structured metadata and vector embeddings are stored in Aurora Postgres (QuorumDB).
+Secondary LLM Triage Integration
+For your secondary LLM triage system, the key interaction points are:
+
+Input Data: You will receive/pull extraction results which contain:
+
+Solicitation Metadata: Title, Agency, Deadline, Set-Aside, NAICS.
+Cleaned Text: The "amputated" body text (SOW/PWS) ready for LLM context windows.
+Rank/Score: (Optional) Initial P(Win) or relevance score calculated by Quorum.
+Output Expectations:
+
+Your LLM should accept the cleaned_text and metadata.
+Perform secondary ranking/triage.
+Return a structured triage result (e.g., priority: High/Medium/Low, reasoning: "...").
+3. API Access & Endpoints
+All endpoints are public AWS Lambda URLs.
+
+Base URLs (Dev Environment)
+Main API: https://aup5rdmx5ut3pzrm6ndgmxcwzy0rieec.lambda-url.us-east-1.on.aws/
+Waitlist API: https://hlcovzmpkm73zd27jewrvwwkga0rrlwp.lambda-url.us-east-1.on.aws/
+Manual Scraper: https://kcwr3r6xek6kofigsfhmibixyu0micfv.lambda-url.us-east-1.on.aws/
+Migrator: https://mx7faaaf7kizv4l2dvp7lusocu0vqpkn.lambda-url.us-east-1.on.aws/
+Key Endpoints
+1. Get Opportunities (Main Feed)
+GET / (on Main API)
+Returns: list of recent parsed solicitations.
+Schema:
+[
+  {
+    "id": "solicitation-id",
+    "title": "Engineering Support Services",
+    "agency": "Department of the Navy",
+    "postedDate": "2024-01-15",
+    "deadline": "2024-02-15",
+    "naics": "541330",
+    "description": "...", // Snippet
+    "link": "https://sam.gov/..."
+  }
+]
+2. Join Waitlist
+POST / (on Waitlist API)
+Body: {"email": "partner@example.com"}
+Response: 200 OK
+4. Operational Notes
+Cold Starts: Endpoints running on Lambda may have a 1-3s cold start latency.
+Database Access: Direct DB access is restricted to the VPC. External tools must use the API or be whitelisted via a Bastion host.
+WSL Requirement: Deployment and local development requires Windows Subsystem for Linux (WSL) due to OpenNext compatibility.

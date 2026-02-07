@@ -1,0 +1,230 @@
+{
+  "firm_metadata": {
+    "name": "TPGI CPA LLC",
+    "ueid": "TBD-PENDING",
+    "cage_code": "TBD-PENDING",
+    "business_type": [
+      "Woman Owned Small Business (WOSB)",
+      "Minority Owned Business",
+      "Small Disadvantaged Business (SDB)"
+    ],
+    "naics_codes": [
+      "541211",
+      "541219",
+      "541611",
+      "541618",
+      "561110",
+      "522310"
+    ],
+    "naics_descriptions": {
+      "541211": "Offices of Certified Public Accountants",
+      "541219": "Other Accounting Services",
+      "541611": "Administrative and General Management Consulting Services",
+      "541618": "Other Management Consulting Services",
+      "561110": "Office Administrative Services",
+      "522310": "Mortgage and Nonmortgage Loan Brokers"
+    },
+    "locations": [
+      {
+        "city": "San Francisco",
+        "state": "CA",
+        "address": "500 Montgomery Street, 10th and 11th floors",
+        "zip": "94102"
+      },
+      {
+        "city": "Washington",
+        "state": "DC",
+        "address": "1629 K St., NW, Suite 300",
+        "zip": "20006"
+      }
+    ],
+    "clearance_level": "None currently held",
+    "certifications": [
+      "CPA (Certified Public Accountant)",
+      "CMA (Certified Management Accountant)",
+      "SPHR (Senior Professional in Human Resources)",
+      "MBA"
+    ],
+    "contract_vehicles": [
+      "Premier TPGI Joint Venture"
+    ],
+    "contact": {
+      "email": "info@tpgi-cpa.com",
+      "phone": "415-742-2335"
+    }
+  },
+  "capabilities": {
+    "core_competencies": [
+      "Federal Agency Accounting Support",
+      "Internal Controls Assessment and Implementation (A-123)",
+      "Compliance Monitoring and Reviews",
+      "Financial Statement Audits (A-133)",
+      "Risk Management and Analysis",
+      "CFO and Financial Management Support",
+      "Contract Monitoring and Closeout",
+      "Pre-Award and Post-Award Audit Support",
+      "Performance Audits",
+      "Incurred Cost Audits and Analysis",
+      "Financial Data Analysis",
+      "Budget Review and Optimization",
+      "Indirect Cost Calculation and Allocation",
+      "Accounting Software Implementation"
+    ],
+    "specialized_expertise": [
+      "OMB compliance and approval standards",
+      "Inspector General (IG) audit preparation",
+      "GAO audit preparation and response",
+      "SBA programs and regulations expertise",
+      "Federal financial management regulations",
+      "GAAP and government accounting standards",
+      "DCAA compliance",
+      "Cost accounting and billing compliance"
+    ],
+    "service_areas": {
+      "government": "Assists federal agencies with accounting, internal controls, compliance monitoring, and risk management. Expertise in working with OMB, IG, and GAO.",
+      "non_profit": "Strategic financial services including full cycle financial management, reporting, audit services, and indirect cost allocation.",
+      "small_business": "CFO consulting, access to capital support, government contract compliance, and indirect rate preparation."
+    }
+  },
+  "past_performance": [
+    {
+      "project_name": "SBA Deputy CFO Leadership",
+      "client": "Small Business Administration (SBA)",
+      "type": "Federal Leadership Role",
+      "value": "Agency Budget: $1B annually, Loan Portfolio: $100B+",
+      "description": "Founder served as Deputy CFO overseeing financial operations for the entire agency. Managed annual budget of approximately $1 billion and loan portfolio exceeding $100 billion.",
+      "relevance_points": [
+        "Federal CFO-level experience",
+        "Large-scale financial oversight",
+        "SBA programs expertise",
+        "Budget management",
+        "Loan portfolio management"
+      ]
+    },
+    {
+      "project_name": "SBA Office of Internal Controls Establishment",
+      "client": "Small Business Administration (SBA)",
+      "type": "Federal Program Establishment",
+      "value": "Agency-wide implementation",
+      "description": "Established the Office of Internal Controls at SBA and served as the first Director. Built internal control framework from ground up for federal agency.",
+      "relevance_points": [
+        "Internal controls (A-123)",
+        "Federal agency startup",
+        "Policy development",
+        "Compliance framework design"
+      ]
+    },
+    {
+      "project_name": "Federal and State Government Auditing",
+      "client": "Multiple Federal and State Agencies",
+      "type": "Public Accounting Services",
+      "value": "10+ years of engagements",
+      "description": "Prior to federal service, provided auditing and consulting services to Federal and State governments through regional public accounting firm for over 10 years.",
+      "relevance_points": [
+        "Government auditing",
+        "Compliance reviews",
+        "Financial statement audits",
+        "Consulting services"
+      ]
+    },
+    {
+      "project_name": "ICE Financial Operations Support",
+      "client": "Immigration and Customs Enforcement (ICE)",
+      "type": "Financial Management",
+      "value": "Multi-year engagement",
+      "description": "Team member led financial operations including financial reporting, internal controls, and systems modernization for ICE.",
+      "relevance_points": [
+        "DHS agency experience",
+        "Financial reporting",
+        "Systems modernization",
+        "Internal controls"
+      ]
+    },
+    {
+      "project_name": "Premier TPGI Government Services",
+      "client": "Federal, State, and Local Governments",
+      "type": "Joint Venture Contracts",
+      "value": "Multiple ongoing engagements",
+      "description": "Through Premier TPGI joint venture, provides financial audits, accounting support, and related services to government entities at all levels.",
+      "relevance_points": [
+        "Financial audits",
+        "A-123 support",
+        "A-133 audits",
+        "Performance audits",
+        "Contract monitoring"
+      ]
+    }
+  ],
+  "key_personnel": [
+    {
+      "name": "Tong Qin",
+      "role": "Founder & Principal",
+      "credentials": ["CPA"],
+      "years_experience": 25,
+      "expertise": "Federal financial management expert. Former Deputy CFO and first Director of Internal Controls at SBA. Deep knowledge of OMB, IG, and GAO requirements.",
+      "clearance": "Previously held federal clearance"
+    },
+    {
+      "name": "Sue Cirocco",
+      "role": "Management Consultant",
+      "credentials": ["CPA", "MBA"],
+      "years_experience": 25,
+      "expertise": "Financial operations leadership for federal agencies including SBA and ICE. Expertise in financial reporting, internal controls, systems modernization, and audit readiness.",
+      "clearance": "Previously held federal clearance"
+    },
+    {
+      "name": "Fizza Shafiq",
+      "role": "Senior Auditor/Consultant",
+      "credentials": ["CMA"],
+      "years_experience": 10,
+      "expertise": "Auditing, financial reporting, internal controls. Background at KPMG, MGO, and Sacks Press & Lacher. Expertise in GAAP, PCAOB audits, banking, government, and non-profits.",
+      "clearance": "None specified"
+    },
+    {
+      "name": "Alicia Lemoine",
+      "role": "Human Resources Manager",
+      "credentials": ["SPHR"],
+      "years_experience": 10,
+      "expertise": "HR strategy, employee relations, compliance, policy development, and people analytics.",
+      "clearance": "None specified"
+    },
+    {
+      "name": "Tenbite Esayas",
+      "role": "Senior Auditor",
+      "credentials": ["MBA"],
+      "years_experience": 8,
+      "expertise": "Financial auditing and analysis.",
+      "clearance": "None specified"
+    },
+    {
+      "name": "Richard Guadagno",
+      "role": "Finance Consultant",
+      "credentials": [],
+      "years_experience": 10,
+      "expertise": "Financial consulting and analysis.",
+      "clearance": "None specified"
+    }
+  ],
+  "joint_venture": {
+    "name": "Premier TPGI",
+    "description": "Joint venture specializing in CPA services for complex government accounting needs.",
+    "services": [
+      "Financial Management Support",
+      "Internal Control Support - Program Related Controls",
+      "Compliance Reviews and Audits",
+      "Financial Statement Reviews and Audits",
+      "Contract Monitoring and Closeout",
+      "Pre-Award & Post-Award Audit Survey Support",
+      "A-123 Internal Controls Support",
+      "A-133 Financial Audits",
+      "Performance Audits",
+      "Incurred Cost Audits & Analysis",
+      "Financial Data Analysis & Risk Analysis"
+    ],
+    "clients": [
+      "Federal Government Agencies",
+      "State Government Agencies",
+      "Local Government Entities"
+    ]
+  }
+}
